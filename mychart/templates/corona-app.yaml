@@ -22,7 +22,7 @@ kind: CronJob
 metadata:
   name: corona-map
 spec:
-  schedule: "0,10,15,33 * * * * "
+  schedule: "0 * * * * "
   jobTemplate:
     spec:
       template:
