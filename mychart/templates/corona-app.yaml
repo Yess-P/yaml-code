@@ -34,9 +34,6 @@ spec:
           containers:
           - name: corona-map
             image: parkes9509/corona:{{ .Values.version }}
-            env:
-              - name: MYSQL_SERVICE_IP # mysql db 서비스IP
-                value: 10.106.97.250
             ports:
             - name: corona-map-port
               containerPort: 5001
